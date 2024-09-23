@@ -4,7 +4,7 @@ A simple, responsive travel-themed website designed to showcase the joy of trave
 - A **theme toggle** button to switch between light and dark modes.
 - A **grid layout** displaying travel-related images with hover effects.
 - **Responsive design** for seamless viewing on all devices.
-- **External links** to a Wikipedia travel article and an Instagram profile.
+- **External links** to a Wikipedia travel article and my Instagram profile.
 
 Built with **HTML**, **CSS**, and **JavaScript** for theme functionality. Users can easily explore the content and enjoy the interactive features. 
 
