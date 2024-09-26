@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel - My Hobby 💃</title>
+
+    <style>
+        body{
+            background-image: url("project-images/travel-image6.jpg");
+            background-size: cover;
+            /*background: radial-gradient(circle at 10% 20%, rgb(166, 226, 229) 0%, rgb(198, 232, 221) 100.2%);*/
+        }
+        h1{
+            text-align: center;
+            font-family: Tahoma, sans-serif;
+        }
+        h2{
+            text-align: center;
+            /* font-family: Georgia, serif; -->*/
+            font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
+            font-weight: 900;
+            
+        }
+        .container{
+            max-width: 600px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 0 auto;
+            
+        }
+        img{
+            max-width: 100%;
+        }
+        button{
+            display: block;
+            margin: 20px auto;
+            border: 1px solid teal;
+            background: white;
+            font-size: 20px;
+            border-radius: 10px;
+            padding: 10px 15px;
+            transition: all 150ms ease-in-out;
+        }
+        button:hover{
+            background: teal;
+            cursor: pointer;
+
+        }
+        footer{
+            text-align: center;
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        .theme-button{
+            font-size: 10px;
+            background: black;
+            color: white;
+            padding: 8px 8px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+        }
+        .theme-button:hover{
+            background: white;
+            color: black;
+        }
+        p{
+            /*font-family: 'Playfair Display Italic';*/
+            text-align: justify;
+            font-size: 16px;
+            line-height: 1.5;        
+        }
+        .travel-intro-picture{
+            border-radius: 10px;
+            transition: all 150ms ease-in-out;
+        }
+        .travel-intro-picture:hover{
+            filter: contrast(80%);
+            transform: scale(1.1);
+        }
+        .grid{
+            margin: 15px 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 20px;
+        }
+        .grid img{
+            width:100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            border-radius: 8px;
+            transition: all 150ms ease-in-out;
+
+        }
+        .grid img:hover{
+            transform: scale(2);
+        }
+        .dark{
+            /*background:linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);*/
+            background-image: url("project-images/travel-image7.jpg");
+            color: white;
+            background-size: cover;
+
+
+        }
+        .dark .container{
+            background: rgba(255, 255, 255, 0.1);
+            background-color: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%); /*rgba(255, 255, 255, 0.1);*/
+        }
+        .dark a{
+            color: #885DF1;
+        }
+        a{
+            font-size: 18px;
+        }
+
+    </style>
+</head>
+<body>
+    <button class="theme-button"><strong>CHANGE THEME</strong></button>
+    <div class="container">
+        <h1>✈️Globe-trotting</h1>
+        <h2>My favorite hobby</h2>
+        <a href="https://en.wikipedia.org/wiki/Travel" target="_blank">
+        <img
+        src="project-images/travel-image1.jpg" alt="" class="travel-intro-picture"/>
+        </a>
+    <div class ="grid">
+        <img 
+        src="project-images/travel-image2.jpg" alt="">
+        <img 
+        src="project-images/travel-image3.avif" alt="">
+        <img 
+        src="project-images/travel-image4.jpg" alt="">
+        <img 
+        src="project-images/travel-image5.jpg" alt="">
+    </div>
+        <p>Traveling as a hobby offers a unique blend of adventure, learning, and personal growth. It allows individuals to explore new cultures, experience different cuisines, and meet people from diverse backgrounds. Whether it's discovering hidden gems in a bustling city or finding peace in nature's beauty, travel provides endless opportunities for memorable experiences. It broadens perspectives, encourages curiosity, and helps create lasting memories, making it a fulfilling and enriching way to spend leisure time.</p>
+        <br /><br />
+
+        <a href="https://www.instagram.com/t_tthatcherluv?igsh=eGs1enoxNnN5ODN1&utm_source=qr" target="_blank"><strong>Discover more on </strong><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="" style="width: 14px; height: 14px;"></a>
+    </div>
+    <br /><br />
+<footer><strong>Coded with 💕by 
+    <a href="https://github.com/CharityO3" target="_blank">Charity Orhoridiohwo</strong></a>
+</footer>
+
+<script>
+    function changeTheme() {
+        let body = document.querySelector("body");
+
+        body.classList.toggle("dark");
+
+        //if (body.classList.contains("dark")){
+            //body.classList.remove("dark");}
+            //else{
+            //body.classList.add("dark");
+    }//}
+
+    let themeButton = document.querySelector(".theme-button");
+    themeButton.addEventListener("click", changeTheme);
+</script>
+</body>
+</html>
